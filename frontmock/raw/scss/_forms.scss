@@ -1,0 +1,82 @@
+.inputfield {
+  display: block;
+  width: 100%;
+  height: 43px;
+  padding: 10px;
+  margin-bottom: 8px;
+  font-family: $font-main;
+  font-size: 16px;
+  background: $color-blanc;
+  border: 0;
+  box-sizing: border-box;
+  transition: 0.1s;
+}
+
+.formgroup p,
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+input[type="text"],
+textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 8px ($base-padding * 1.5) 10px;
+  font-size: 16px;
+  border: 2px solid $color-primary-flare;
+  resize: vertical;
+
+  .planner-box & {
+    border: 0;
+  }
+}
+
+input {
+  &[type="checkbox"],
+  &[type="radio"] {
+    position: relative;
+    top: -1px;
+    margin-right: 8px;
+  }
+}
+
+:required::before {
+  position: absolute;
+  margin-top: -3px;
+  margin-left: -30px;
+  font-family: FontAwesome;
+  color: $color-primary;
+  content: '\f069';
+}
+
+.invalid {
+  color: $color-bad;
+
+  &:required::before {
+    color: $color-bad;
+    content: '\f06a';
+  }
+}
+
+input.invalid,
+textarea.invalid {
+  padding: 7px 7px 9px;
+  color: $color-bad;
+  border: 2px solid $color-bad;
+  border-radius: 2px;
+}
+
+.validation-help-text {
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: $color-bad;
+}
+
+.formgroup {
+  margin-bottom: 30px;
+}

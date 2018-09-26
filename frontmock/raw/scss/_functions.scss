@@ -1,0 +1,43 @@
+///////////////////////////////////////////////
+// Functions
+
+@function tint($color, $percentage) {
+  $base: #fff;
+  @return mix($color, $base, $percentage);
+}
+
+@function shade($color, $percentage) {
+  $base: #000;
+  @return mix($color, $base, $percentage);
+}
+
+//
+
+@mixin baseline-mixin {
+  @if $debug{
+    body {
+      position: relative;
+
+      &::after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 9999;
+        display: block;
+        width: auto;
+        height: auto;
+        pointer-events: none;
+        background: url('../img/baseline.png') repeat top left;
+        content: '';
+        opacity: 0.4;
+      }
+
+      &:active::after {
+        display: none;
+      }
+    }
+  }
+}
+@include baseline-mixin;

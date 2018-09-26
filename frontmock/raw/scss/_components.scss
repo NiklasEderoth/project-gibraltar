@@ -1,0 +1,62 @@
+.button,
+button {
+  display: block;
+  padding: 7px 16px 8px;
+  font-family: $font-main;
+  font-size: 16px;
+  line-height: 28px;
+  color: $color-contrast;
+  cursor: pointer;
+  background: $color-primary;
+  border: 0;
+  transition: 0.3s;
+
+  &.stretch {
+    width: 100%;
+  }
+
+  &:hover {
+    background: mix($color-primary, $color-contrast, 70);
+  }
+
+  &.good {
+    color: $color-good-contrast;
+    background: $color-good;
+
+    &:hover {
+      background: mix($color-good, $color-good-contrast, 70);
+    }
+  }
+
+  &.bad {
+    color: $color-bad-contrast;
+    background: $color-bad;
+
+    &:hover {
+      background: mix($color-bad, $color-bad-contrast, 70);
+    }
+  }
+
+  &.info {
+    color: $color-info-contrast;
+    background: $color-info;
+
+    &:hover {
+      background: mix($color-info, $color-info-contrast, 70);
+    }
+  }
+
+  &.oops {
+    color: $color-oops-contrast;
+    background: $color-oops;
+
+    &:hover {
+      background: mix($color-oops, $color-oops-contrast, 70);
+    }
+  }
+
+  &.contrast {
+    color: $color-primary;
+    background: $color-contrast;
+  }
+}

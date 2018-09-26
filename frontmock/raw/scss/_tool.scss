@@ -1,0 +1,39 @@
+section.canvas {
+  margin-top: 80px;
+  padding: 20px 0;
+
+  div {
+    background: rgba($color-noir, .1);
+    border: 1px dashed rgba($color-primary, 0);
+    padding: 1px 2px;
+    transition: all 0.3s;
+    margin-bottom: 2px;
+    padding-top: 15px;
+
+
+    &:hover {
+      border: 1px dashed rgba($color-primary, 1);
+      background: $color-blanc;
+      > .createInside {
+        height: 14px;
+        padding: 2px 4px;
+        margin-top: -14px;
+      }
+    }
+  }
+
+  .createInside {
+    position: absolute;
+    display: inline-block;
+    padding: 0 4px;
+    font-size: 8px;
+    background: $color-primary;
+    color: $color-contrast;
+    cursor: pointer;
+    line-height: 10px;
+    vertical-align: top;
+    height: 0;
+    transition: all .3s;
+    overflow: hidden;
+  }
+}

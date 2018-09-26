@@ -1,0 +1,18 @@
+{
+  "name": "modular-mockup",
+  "version": "0.1.0",
+  "author": {
+    "name": "Martin Johansson",
+    "email": "martin.johansson@sogeti.se"
+  },
+  "devDependencies": {
+    "grunt": "~1.0.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-haml": "^0.9.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-includes": "^1.0.0",
+    "grunt-notify": "^0.4.5"
+  }
+}

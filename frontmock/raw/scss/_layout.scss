@@ -1,0 +1,34 @@
+body,
+html {
+  min-width: 300px;
+  overflow-x: hidden;
+  background-color: $color-blanc;
+}
+
+a {
+  color: $color-primary;
+  text-decoration: none;
+
+  &:focus,
+  &:hover {
+    color: $color-primary-shade;
+    text-decoration: none;
+  }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.invert {
+  color: $color-contrast;
+  background: $color-primary;
+}
+
+.block .text {
+  width: 100%;
+  padding: 38px 32px 0;
+  margin-bottom: 34px;
+}

@@ -1,0 +1,53 @@
+//////////////////////////////////////////////////
+// Brand colors
+$color-primary: hsl(200,80%,40%);
+$color-primary-shade: shade($color-primary, 70);
+$color-primary-tint: tint($color-primary, 70);
+$color-primary-flare: tint($color-primary, 50);
+
+//////////////////////////////////////////////////
+// Blanc & Noir
+$color-blanc: #fff;
+$color-fume: shade($color-blanc, 94);
+$color-noir: #3a3a3a;
+$color-dusk: tint($color-noir, 90);
+
+//////////////////////////////////////////////////
+// Contrast color relative to primary color
+$color-contrast: pick-best-color($color-primary, ($color-blanc, $color-noir));
+
+//////////////////////////////////////////////////
+// UI colors
+$color-good: hsl(100, saturation($color-primary), lightness($color-primary));
+$color-good-contrast: pick-best-color($color-good, ($color-blanc, $color-noir));
+$color-bad: hsl(0, saturation($color-primary), lightness($color-primary));
+$color-bad-contrast: pick-best-color($color-bad, ($color-blanc, $color-noir));
+$color-info: hsl(200, saturation($color-primary), lightness($color-primary));
+$color-info-contrast: pick-best-color($color-info, ($color-blanc, $color-noir));
+$color-oops: hsl(40, saturation($color-primary), lightness($color-primary));
+$color-oops-contrast: pick-best-color($color-oops, ($color-blanc, $color-noir));
+
+//////////////////////////////////////////////////
+// Misc colors
+$base-shadow: rgba($color-noir, .05);
+
+//////////////////////////////////////////////////
+// Breakepoints
+$xs: 544px; // Default: 544px;
+$sm: 768px; // Default: 768px;
+$md: 992px; // Default: 992px;
+$lg: 1200px; // Default: 1200px;
+$header-sm: ($xs - 22); // Test and set as low as possible, update JS to harmonize
+$header-md: ($md - 131); // Same as above
+$header-lg: ($lg - 166); // Same as above (No JS tiggers)
+
+//////////////////////////////////////////////////
+// Common widths
+$base-width: 1400px;
+$inner-width: 960px;
+$text-width: 720px;
+$base-padding: 8px;
+
+//////////////////////////////////////////////////
+// Fonts
+$font-main: Roboto, sans-serif;
