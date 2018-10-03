@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gibraltar.Web", "Gibraltar.Web\Gibraltar.Web.csproj", "{8197A898-311D-4C3F-BC3F-8536571E0022}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8197A898-311D-4C3F-BC3F-8536571E0022}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8197A898-311D-4C3F-BC3F-8536571E0022}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8197A898-311D-4C3F-BC3F-8536571E0022}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8197A898-311D-4C3F-BC3F-8536571E0022}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C1B46CFA-5555-4E3D-8D66-643BA15C420C}
+	EndGlobalSection
+EndGlobal
